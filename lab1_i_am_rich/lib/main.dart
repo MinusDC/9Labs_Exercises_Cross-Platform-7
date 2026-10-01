@@ -29,13 +29,16 @@ class RichPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(centerTitle: true, title: const Text('I Am Rich')),
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Trần Văn Trừ - 23IT.B237'),
+      ),
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             Image.asset(
-              'assets/images/diamond.png',
+              'assets/images/diamond1.png',
               width: 260,
               height: 260,
               fit: BoxFit.contain,
