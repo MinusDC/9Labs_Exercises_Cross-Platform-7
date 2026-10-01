@@ -35,7 +35,7 @@ class ContactCardPage extends StatelessWidget {
             children: [
               ClipOval(
                 child: Image.asset(
-                  'assets/images/avatar.png',
+                  'assets/images/tranvantru.png',
                   width: 152,
                   height: 152,
                   fit: BoxFit.cover,
@@ -43,7 +43,7 @@ class ContactCardPage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Text(
-                'Alex Morgan',
+                'Trần Văn Trừ ',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                   fontWeight: FontWeight.w700,
                   color: const Color(0xffe6f1e8),
@@ -59,14 +59,11 @@ class ContactCardPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 28),
-              const _ContactTile(
-                icon: Icons.phone_outlined,
-                text: '+1 555 010 2048',
-              ),
+              const _ContactTile(icon: Icons.phone_outlined, text: '23IT.B237'),
               const SizedBox(height: 12),
               const _ContactTile(
                 icon: Icons.email_outlined,
-                text: 'alex.morgan@example.com',
+                text: 'trutv.23itb@vku.udn.vn',
               ),
             ],
           ),
