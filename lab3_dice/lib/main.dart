@@ -10,7 +10,7 @@ class DiceApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Dice',
+    title: 'Trần Văn Trừ Lab 3 - Dice',
     theme: ThemeData(
       colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xffef8354),
@@ -44,7 +44,10 @@ class _DicePageState extends State<DicePage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('Dice'), centerTitle: true),
+    appBar: AppBar(
+      title: const Text('Trần Văn Trừ Lab 3 - Dice'),
+      centerTitle: true,
+    ),
     body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -85,10 +88,21 @@ class _DieFace extends StatelessWidget {
   Widget build(BuildContext context) => InkWell(
     onTap: onTap,
     borderRadius: BorderRadius.circular(24),
-    child: Image.asset(
-      'assets/images/dice$value.png',
-      fit: BoxFit.contain,
-      semanticLabel: 'Die showing $value',
+    child: Container(
+      padding: const EdgeInsets.all(8),
+      decoration: BoxDecoration(
+        color: Colors.white.withAlpha(26),
+        borderRadius: BorderRadius.circular(24),
+        border: Border.all(color: Colors.white.withOpacity(0.2), width: 1.5),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: Image.asset(
+          'assets/images/dice$value.png',
+          fit: BoxFit.cover,
+          semanticLabel: 'Die showing $value',
+        ),
+      ),
     ),
   );
 }
