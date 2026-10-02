@@ -1,15 +1,15 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const XylophoneApp());
+void main() => runApp(const MyApp());
 
-class XylophoneApp extends StatelessWidget {
-  const XylophoneApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Xylophone',
+    title: 'Trần Văn Trừ - Xylophone',
     theme: ThemeData(useMaterial3: true),
     home: const XylophonePage(),
   );
@@ -24,13 +24,13 @@ class XylophonePage extends StatefulWidget {
 
 class _XylophonePageState extends State<XylophonePage> {
   static const _colors = [
-    Color(0xffef5b5b),
-    Color(0xfff18b43),
-    Color(0xfff2cb5a),
-    Color(0xff6cbf75),
-    Color(0xff48a9a6),
-    Color(0xff4d83c4),
-    Color(0xff8d74bb),
+    Color.fromARGB(255, 255, 0, 0),
+    Color.fromARGB(255, 255, 110, 6),
+    Color.fromARGB(255, 238, 179, 4),
+    Color.fromARGB(255, 0, 255, 30),
+    Color.fromARGB(255, 11, 255, 247),
+    Color.fromARGB(255, 1, 42, 92),
+    Color.fromARGB(255, 152, 110, 230),
   ];
   final AudioPlayer _player = AudioPlayer();
 
@@ -47,7 +47,10 @@ class _XylophonePageState extends State<XylophonePage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(title: const Text('Xylophone'), centerTitle: true),
+    appBar: AppBar(
+      title: const Text('Trần Văn Trừ - Xylophone'),
+      centerTitle: true,
+    ),
     body: SafeArea(
       child: Column(
         children: List.generate(
