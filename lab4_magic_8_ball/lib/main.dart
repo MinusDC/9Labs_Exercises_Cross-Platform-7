@@ -2,10 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MagicBallApp());
+void main() => runApp(const MyApp());
 
-class MagicBallApp extends StatelessWidget {
-  const MagicBallApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) => MaterialApp(
